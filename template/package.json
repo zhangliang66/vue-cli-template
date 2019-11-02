@@ -29,7 +29,9 @@
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}{{#vuex}},
-    "vuex": "^3.1.1"{{/vuex}}
+    "vuex": "^3.1.1"{{/vuex}}{{#vueAxios}},
+    "vue-axios": "^2.1.4"{{/vueAxios}}{{#axios}},
+    "axios": "^0.19.0"{{/axios}},
   },
   "devDependencies": {
     {{#lint}}

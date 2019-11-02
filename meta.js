@@ -79,6 +79,11 @@ module.exports = {
       type: 'confirm',
       message: 'Install vuex?',
     },
+    axios: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: 'Install axios?',
+    },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
@@ -176,6 +181,7 @@ module.exports = {
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
     'src/store/**/*': 'vuex',
+    'src/axios/**/*': 'axios',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
