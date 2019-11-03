@@ -1,5 +1,5 @@
 /**
- * login模块接口列表
+ * 测试模块接口列表
  */
 import axios from '@/axios/http'; // 导入http中创建的axios实例
 

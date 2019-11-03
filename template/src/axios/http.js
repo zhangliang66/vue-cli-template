@@ -20,11 +20,11 @@ const toLogin = () => {
 }
 
 // 分环境打包
-if (process.env.NODE_ENV == 'test') {//测试地址
-  axios.defaults.baseURL = 'test';
-} else if (process.env.NODE_ENV == 'production') {//生产地址
-  axios.defaults.baseURL = 'production';
-} else{//本地调试
+if (process.env.NODE_ENV == 'test') { //测试地址
+  axios.defaults.baseURL = 'https://api.apiopen.top/test';
+} else if (process.env.NODE_ENV == 'production') { //生产地址
+  axios.defaults.baseURL = 'https://api.apiopen.top/production';
+} else { //本地调试
   axios.defaults.baseURL = '/api';
 }
 

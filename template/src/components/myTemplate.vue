@@ -13,9 +13,10 @@ export default {
     }
   },
   created() {
-    this.$api.login.login('123').then(res=>{
+   let data = { page: 1, count: 2, type: 'video' };
+    this.$api.login.test(data).then(res => {
       console.log(res);
-    })
+    });
   },
 }
 </script>
