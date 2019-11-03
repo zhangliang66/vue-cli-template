@@ -19,6 +19,15 @@ const toLogin = () => {
   });
 }
 
+// 分环境打包
+if (process.env.NODE_ENV == 'test') {//测试地址
+  axios.defaults.baseURL = 'test';
+} else if (process.env.NODE_ENV == 'production') {//生产地址
+  axios.defaults.baseURL = 'production';
+} else{//本地调试
+  axios.defaults.baseURL = '/api';
+}
+
 /** 
  * 请求失败后的错误统一处理 
  * @param {Number} status 请求失败的状态码

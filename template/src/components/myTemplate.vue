@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'mytemplate',
   data () {
     return {
       msg: ''
     }
   },
   created() {
-    this.$api.login.login(params).then(res=>{
+    this.$api.login.login('123').then(res=>{
       console.log(res);
     })
   },
