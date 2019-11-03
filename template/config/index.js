@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:'https://openapi.baidu.com',
+        target:'https://api.apiopen.top',
         secure: true, // 如果是https接口，需要配置这个参数
         changeOrigin:true,
         pathRewrite:{
