@@ -1,9 +1,9 @@
 /**
- * article模块接口列表
+ * login模块接口列表
  */
 import axios from '@/axios/http'; // 导入http中创建的axios实例
 
-const article = {    
+const login = {    
     // post提交    
     login (params) {        
         return axios.post('/login', params);    
@@ -11,4 +11,4 @@ const article = {
     // 其他接口…………
 }
 
-export default article;
+export default login;

@@ -10,6 +10,10 @@ import router from './router'
 {{#vuex}}
 import store from './store'
 {{/vuex}}
+{{#axios}}
+import api from './axios/base'
+Vue.prototype.$api = api;
+{{/axios}}
 
 Vue.config.productionTip = false
 
@@ -19,10 +23,10 @@ new Vue({
   {{#router}}
   router,
   {{/router}}
-  {{#if_eq build "runtime"}}
   {{#vuex}}
   store,
   {{/vuex}}
+  {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
   {{#if_eq build "standalone"}}
