@@ -5,7 +5,7 @@ import axios from '@/axios/http'; // 导入http中创建的axios实例
 
 const login = {    
     // post提交    
-    login (params) {        
+    test (params) {        
         return axios.post('/login', params);    
     }
     // 其他接口…………

@@ -14,7 +14,7 @@ export default {
   },
   created() {
    let data = { page: 1, count: 2, type: 'video' };
-    this.$api.login.test(data).then(res => {
+    this.$api.test.test(data).then(res => {
       console.log(res);
     });
   },
